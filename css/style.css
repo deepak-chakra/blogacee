@@ -245,6 +245,13 @@ footer {
   margin-bottom: 6px;
 }
 
+.post-page .byline {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 2px;
+}
+
 .post-page .date {
   font-family: "Kalam", cursive;
   opacity: 0.7;
