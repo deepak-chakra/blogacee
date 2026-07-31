@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
 <channel>
-  <title>Blogacee</title>
+  <title>Aqua Insight</title>
   <link>https://deepak-chakra.github.io/blogacee/</link>
   <description>Sports commentary written by a school kid.</description>
   <item>
-    <title>Welcome to Blogacee</title>
+    <title>Welcome to Aqua Insight</title>
     <link>https://deepak-chakra.github.io/blogacee/posts/hello-world.html</link>
     <guid>https://deepak-chakra.github.io/blogacee/posts/hello-world.html</guid>
     <pubDate>Fri, 31 Jul 2026 00:00:00 GMT</pubDate>

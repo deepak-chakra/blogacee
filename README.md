@@ -1,4 +1,4 @@
-# Blogacee
+# Aqua Insight
 
 Sports commentary blog, plain HTML/CSS/JS, hosted on GitHub Pages.
 
