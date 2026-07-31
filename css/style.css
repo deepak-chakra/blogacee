@@ -1,0 +1,257 @@
+:root {
+  --blue: #55aae3;
+  --blue-dark: #2f7cb8;
+  --ink: #111111;
+  --card-1: #ffffff;
+  --card-2: #ffe9b3;
+  --card-3: #ffd1dc;
+  --card-4: #c8f4de;
+  --pill-bg: rgba(255, 255, 255, 0.25);
+  --max-width: 900px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--blue);
+  color: var(--ink);
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+h1, h2, h3, .brand {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  margin: 0;
+}
+
+a {
+  color: var(--ink);
+}
+
+img, svg {
+  max-width: 100%;
+}
+
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Nav */
+.topbar {
+  padding: 20px 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.pill-nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  background: var(--pill-bg);
+  border-radius: 999px;
+  padding: 12px 28px;
+}
+
+.pill-nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.pill-nav svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 40px 24px 20px;
+}
+
+.eyebrow {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  margin-bottom: 4px;
+}
+
+.site-title {
+  font-size: clamp(2.6rem, 8vw, 4.2rem);
+  letter-spacing: 0.03em;
+}
+
+.squiggle {
+  width: 90px;
+  height: 20px;
+  margin: 10px auto;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 90 20'%3E%3Cpath d='M2 14 Q 22 2 45 14 T 88 14' fill='none' stroke='%23111111' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center / contain;
+}
+
+.tagline {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.tagline .accent {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+.hero-art {
+  margin: 30px auto;
+  max-width: 640px;
+}
+
+.intro {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 20px;
+  padding: 20px 26px;
+}
+
+/* Posts */
+.posts-section {
+  padding: 50px 24px;
+}
+
+.posts-section h2,
+.subscribe h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 28px;
+}
+
+.posts-grid {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.post-card {
+  display: block;
+  text-decoration: none;
+  border-radius: 18px;
+  padding: 22px;
+  border: 3px solid var(--ink);
+  box-shadow: 4px 4px 0 var(--ink);
+  transition: transform 0.15s ease;
+}
+
+.post-card:hover {
+  transform: translate(-2px, -2px);
+}
+
+.post-card:nth-child(4n+1) { background: var(--card-1); }
+.post-card:nth-child(4n+2) { background: var(--card-2); }
+.post-card:nth-child(4n+3) { background: var(--card-3); }
+.post-card:nth-child(4n+4) { background: var(--card-4); }
+
+.post-card .date {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.post-card h3 {
+  font-size: 1.3rem;
+  margin: 8px 0;
+}
+
+.post-card p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.empty-state {
+  text-align: center;
+  opacity: 0.8;
+}
+
+/* Subscribe */
+.subscribe {
+  text-align: center;
+  padding: 40px 24px 60px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--ink);
+  color: #fff;
+  text-decoration: none;
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  padding: 12px 26px;
+  border-radius: 999px;
+  border: 3px solid var(--ink);
+}
+
+.btn:hover {
+  background: transparent;
+  color: var(--ink);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px 24px 50px;
+  font-size: 0.9rem;
+}
+
+/* Post page */
+.post-page {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 20px 24px 60px;
+}
+
+.post-page .back {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.post-page article {
+  background: #fff;
+  border: 3px solid var(--ink);
+  box-shadow: 6px 6px 0 var(--ink);
+  border-radius: 20px;
+  padding: 34px;
+}
+
+.post-page h1 {
+  font-size: 2.2rem;
+  margin-bottom: 6px;
+}
+
+.post-page .date {
+  font-family: "Kalam", cursive;
+  opacity: 0.7;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.post-page p {
+  margin: 0 0 16px;
+}
