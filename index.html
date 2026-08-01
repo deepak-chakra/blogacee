@@ -33,13 +33,22 @@
     <div class="squiggle"></div>
 
     <div class="hero-art">
-      <svg viewBox="0 0 400 140" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="70" cy="70" r="30" fill="#fff" stroke="#111" stroke-width="3"/>
-        <path d="M45 55 Q70 75 95 55" fill="none" stroke="#111" stroke-width="2"/>
-        <path d="M45 85 Q70 65 95 85" fill="none" stroke="#111" stroke-width="2"/>
-        <path d="M70 40 Q70 100 70 100" fill="none" stroke="#111" stroke-width="2"/>
-        <line x1="20" y1="120" x2="380" y2="120" stroke="#111" stroke-width="3" stroke-linecap="round"/>
-        <text x="150" y="80" font-family="Kalam, cursive" font-weight="700" font-size="26" fill="#111">GAME ON</text>
+      <svg class="fish" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A cartoon fish swimming">
+        <circle class="bubble bubble-1" cx="262" cy="78" r="4" fill="#fff" opacity="0.8"/>
+        <circle class="bubble bubble-2" cx="274" cy="92" r="3" fill="#fff" opacity="0.8"/>
+        <circle class="bubble bubble-3" cx="252" cy="66" r="2.5" fill="#fff" opacity="0.8"/>
+
+        <g class="fish-body">
+          <path class="fish-tail" d="M120 100 L68 68 L68 132 Z" fill="#eaf6ff" stroke="#111" stroke-width="3" stroke-linejoin="round"/>
+          <ellipse cx="200" cy="100" rx="80" ry="45" fill="#eaf6ff" stroke="#111" stroke-width="3"/>
+          <path d="M178 58 Q200 26 222 58 Z" fill="#ffe9b3" stroke="#111" stroke-width="3" stroke-linejoin="round"/>
+          <circle cx="243" cy="112" r="10" fill="#ffd1dc" opacity="0.7"/>
+          <g class="fish-eye">
+            <circle cx="250" cy="88" r="10" fill="#fff" stroke="#111" stroke-width="2"/>
+            <circle cx="252" cy="88" r="4" fill="#111"/>
+          </g>
+          <path d="M270 104 Q282 110 270 116" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"/>
+        </g>
       </svg>
     </div>
 

@@ -117,6 +117,82 @@ img, svg {
   max-width: 640px;
 }
 
+/* Fish mascot */
+.fish {
+  width: 220px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.fish:hover {
+  transform: scale(1.05);
+}
+
+.fish-body {
+  transform-origin: 200px 100px;
+  animation: fish-bob 2.4s ease-in-out infinite;
+}
+
+.fish-tail {
+  transform-box: fill-box;
+  transform-origin: right center;
+  animation: fish-tail-wag 0.7s ease-in-out infinite;
+}
+
+.fish:hover .fish-tail {
+  animation-duration: 0.35s;
+}
+
+.fish-eye {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: fish-blink 4s ease-in-out infinite;
+}
+
+.bubble {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: fish-bubble 2.6s ease-in infinite;
+}
+
+.bubble-2 {
+  animation-delay: 0.6s;
+}
+
+.bubble-3 {
+  animation-delay: 1.3s;
+}
+
+@keyframes fish-bob {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(-2deg); }
+}
+
+@keyframes fish-tail-wag {
+  0%, 100% { transform: rotate(-14deg); }
+  50% { transform: rotate(14deg); }
+}
+
+@keyframes fish-blink {
+  0%, 92%, 100% { transform: scaleY(1); }
+  95% { transform: scaleY(0.1); }
+}
+
+@keyframes fish-bubble {
+  0% { transform: translateY(0); opacity: 0; }
+  15% { opacity: 0.8; }
+  100% { transform: translateY(-40px); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fish-body, .fish-tail, .fish-eye, .bubble {
+    animation: none;
+  }
+}
+
 .intro {
   max-width: 640px;
   margin: 0 auto;
