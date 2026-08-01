@@ -172,8 +172,8 @@ img, svg {
 }
 
 @keyframes fish-tail-wag {
-  0%, 100% { transform: rotate(-14deg); }
-  50% { transform: rotate(14deg); }
+  0%, 100% { transform: scaleX(1); }
+  50% { transform: scaleX(0.55); }
 }
 
 @keyframes fish-blink {
