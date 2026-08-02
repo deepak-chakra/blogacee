@@ -1,4 +1,4 @@
-# Aqua Insight
+# Aqua Insights
 
 Sports commentary blog, plain HTML/CSS/JS, hosted on GitHub Pages.
 
